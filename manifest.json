@@ -1,0 +1,13 @@
+{
+    "name": "jeffrey garcia jibaja",
+    "short_name": "agenda digital",
+    "description": "Tarjeta profesional- programadaor freelance ",
+    "background_color": "#038484",
+    "theme_color": "#2AA5A8",
+    "orientation": "portrait",
+    "display": "standalone",
+    "start_url": "./?utm_source=web_app_manifest",
+    "scope": "./",
+    "lang": "es-Pe",
+    "icons": []
+  }

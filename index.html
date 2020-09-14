@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jeffrey garcia jibaja</title>
+        <meta name="description" content="ing de sistemas">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta property="og:description" content="">
+        <link rel="shortcut icon" href="img/202009051709507139.png" type="image/*">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="shortcut icon" href="img/202009051709507139.png" type="image/*">
+        <link rel="apple-touch-startup-image" href="img/202009051709507139.png">
+        <link rel="image_src" href="img/202009051709507139.png">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css">
+        
+        
+        <!-- pwa -->
+        <link rel="manifest" href="manifest.json">
+        <meta name="theme-color" content="#2AA5A8">
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="apple-touch-icon" href="img/202009051709507139.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="img/202009051709507139.png">
+
+        <script type="text/javascript">
+            // Initialize the service worker
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('./serviceworker.js', {
+                    scope: '.'
+                }).then(function (registration) {
+                    // Registration was successful
+                    console.log('Laravel PWA: ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('Laravel PWA: ServiceWorker registration failed: ', err);
+                });
+            }
+        </script>
+
+      </head>
+      <body><audio class="audio-for-speech" src=""></audio><div class="translate-tooltip-mtz hidden">                    <div class="header">                        <div class="header-controls">                            <span class="sound-translate"></span>                            <span class="settings"></span>                        </div>                        <div class="translate-icons">                            <img class="from" src="">                            <img class="arrow" src="chrome-extension://gafjimepaiecpbmbmgaefokbekhoecaj/images/right-arrow.png">                            <img class="to" src="">                        </div>                    </div>                    <div class="translated-text">                        <div class="words"></div>                        <div class="sentences"></div>                    </div>                </div><span class="translate-button-mtz hidden"></span>
+        
+        <header class="header-agenda text-center p-0">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-5 my-2">
+              <div class="card bg-transparent border-0 p-0 my-2">
+                <div class="card-header bg-transparent border-0 p-0 contenedor-foto-perfil">
+                    <img class="img-cover perfil-agenda " src="img/202009051709507139.png" alt="jeffrey">
+                      <input type="hidden" id="id" value="55">
+                </div>
+                <div class="card-body bg-transparent border-0 p-0 text-white">
+                    <p class="h3 mb-0  my-2 text-light text-uppercase" id="nombres"> jeffrey garcia jibaja</p>
+                    <small class="d-block fs-x-15 text-uppercase">ing de sistemas</small>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-0 my-2 botonera">
+                  <div class="container bg-transparent row mx-auto">
+                    <div class="col-sm-12 p-0  col-lg-5 p-1">
+                        <button class="w-100 btn btn-perfil-agenda badge-pill fs-x-12 text-white text-uppercase d-block mx-auto my-1" id="perfil" type="button">
+                        Perfil  profesional
+                      </button>
+                    </div>
+                    <div class="col-sm-12 p-0  col-lg-7 p-1">
+                      <a class="w-100 btn btn-perfil-agenda badge-pill fs-x-12 text-white text-uppercase d-block mx-auto my-1" id="contacto" href="http://corpussalud.com.pe/card/card-generate/CRMXB" download="">
+                        Agregar a contactos
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+  
+            </div>
+  
+          </div>
+          <div class="container_botones_flotantes">
+            <a type="button" id="compartir" class="btn-flotante badge-pill border-0">
+              <i class="fas fa-share-alt"></i>
+            </a>
+            <a type="button" id="accesoDirecto" class="btn-flotante badge-pill border-0">
+              <i class="fas fa-info-circle fs-x-15"></i>
+            </a>
+          </div>
+          <div class="closeTabs" style="cursor: pointer">
+            <a type="button" class="btn-volver ">
+             <img src="iconos/volver.png" alt="volver">
+             <span class="d-block pt-1 text-white fs-x-13">Regresar</span>
+            </a>
+           </div>
+        </header>
+  
+  
+      <div class="container animate__animated mt-3" id="containerPrincipal" style="transition: all ease-in-out;">
+        <div class="row my-4">
+          <div class="col-sm-12 col-lg-6">
+              <div class="container row p-0 mt-2 mx-auto">
+                <div class="col-4 p-0 ">
+                  <a href="tel:074323695">
+                    <img class="icono" src="iconos/llamada.png" alt="telefono">
+                    <span>Llamar</span>
+                  </a>
+                </div>
+                <div class="col-4 p-0 ">
+                  <a href="https://api.whatsapp.com/send?phone=+51 074323695&amp;text=&amp;source=&amp;data=&amp;app_absent=" target="_blank">
+                    <img class="icono" src="iconos/whatsapp.png" alt="telefono">
+                    <span>Whatsapp</span>
+                  </a>
+                </div>
+                <div class="col-4 p-0 ">
+                  <a id="email" style="cursor: pointer">
+                    <img class="icono" src="iconos/email.png" alt="email">
+                    <span>Email</span>
+                  </a>
+                </div>
+              </div>
+              <div class="container row p-0 mt-2 mx-auto">
+                <div class="col-4  p-0  ">
+                  <a href="sms:074323695">
+                    <img class="icono" src="iconos/mensaje.png" alt="sms">
+                    <span>SMS</span>
+                  </a>
+                </div>
+                <div class="col-4  p-0">
+                  <a id="mapa" style="cursor: pointer">
+                    <img class="icono" src="iconos/mapa.png" alt="mapa">
+                    <span>Ubicación</span>
+                  </a>
+                </div>
+                <div class="col-4   p-0">
+                                </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-lg-6 ">
+              <div class="row">
+                <div class="col-12 m-0 p-1">
+                  <button id="reservas" class="btn mb-3 btn-primary w-100 text-white badge-pill fs-x-14 ">Reserva una cita</button>
+                </div>
+                <div class="col-12 m-0 p-1">
+                      <button id="videoConsulta" class="mb-3 btn btn-perfil-agenda-degradado w-100 text-white badge-pill fs-x-14 ">Video consulta</button>
+                </div>
+                <div class="col-12 m-0 p-1">
+                      <button id="publicaciones" class=" btn btn-perfil-agenda w-100 text-white badge-pill fs-x-14 ">Ver sus publicaciones</button>
+                </div>
+              </div>
+          </div>
+        </div>
+                <div class="row my-1 justify-content-center">   
+            <div class="col-sm-12 col-lg-6 mx-auto">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/p0OH206z9Wg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                  
+  
+            </div>
+          </div>      
+              
+      </div>
+  
+      <div class="container bg-transparent py-2 px-lg-5 animate__animated d-none mt-3 " id="containerPerfil" style="transition: all ease-in;">  
+          <div class="row">
+            <div class="col-sm-12 col-lg-4 p-1">
+              <div class="card bg-white p-2">
+                <div class="header-estudios  ">
+                   <p class="text-uppercase fs-x-14 cabecera px-3 "> <img class="icono-2 mr-2" src="iconos/estudios.png" alt="estudios">Estudios</p>                    
+              </div>
+              <div class="perfil-body pl-3">
+                  <ul class="list-unstyled">
+                                        <li class="fs-x-15 ">  <span class="border-bottom">ingenieria de sistemas</span> 
+                        <p class="fs-x-13">unorg</p>
+                      </li>
+                                    </ul>
+                  
+              </div>
+              </div>
+            </div>
+                      <div class="col-sm-12 col-lg-4 p-1 ">
+              <div class="card bg-white p-2">
+                <div class="header-estudios  ">
+                  <p class="text-uppercase fs-x-14 cabecera"> <img class="icono-2 mr-2 ml-2" src="iconos/experiencia.png" alt="experiencia">Experiencia</p>                    
+              </div>
+              <div class="perfil-body pl-3">
+                  <ul class="list-unstyled">
+                                        <li class="fs-x-15 ">  <span class="border-bottom">pruebas</span> 
+                        <p class="fs-x-13">pruebas</p>
+                      </li>
+                                    </ul>
+                  
+              </div>
+            </div>
+            </div>
+                      <div class="col-sm-12 col-lg-4 p-1 ">
+              <div class="card bg-white p-2">
+                <div class="header-estudios  ">
+                  <p class="text-uppercase fs-x-14 cabecera px-3 border">Ver Puntuaciones</p>                    
+              </div>
+              <div class="perfil-body pl-3">
+                  <ul id="puntosctuales" class="list-unstyled">
+                    <li class="fs-x-15 "> 
+                      <div id="puntuacion" class="rateyo disabled jq-ry-container" data-rateyo-rating="0" style="width: 100px;"><div class="jq-ry-group-wrapper"><div class="jq-ry-normal-group jq-ry-group"><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="gray"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="gray" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="gray" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="gray" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="gray" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg></div><div class="jq-ry-rated-group jq-ry-group" style="width: 0%;"><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg></div></div></div>
+                      <p id="puntuacion-perfil" class="fs-x-13 mt-2">0 Puntuación </p>
+                    </li>
+                    <li class="fs-x-13">  
+                      <button id="btn_puntucion" class="btn btn-primary text-white badge-pill mx-auto fs-x-13">Deja tu puntuación</button>
+                    </li>
+  
+                  </ul>
+                  <div id="formularioPuntuacion" class="mt-2" style="display: none;">
+                    <form class="form" id="formPuntuacion" method="POST">
+                      <input type="hidden" name="_token" value="OHt1Pncg6xhWbqS2x9A2xbZJmhgKBZoOPTxQy4cM">                    <label>Puntuación</label>
+                      <div id="puntuacion2" class="rateyo jq-ry-container" data-rateyo-rating="0" data-rateyo-num-stars="5" data-rateyo-score="4" style="width: 100px;"><div class="jq-ry-group-wrapper"><div class="jq-ry-normal-group jq-ry-group"><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="gray"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="gray" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="gray" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="gray" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="gray" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg></div><div class="jq-ry-rated-group jq-ry-group" style="width: 0%;"><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;"><polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon></svg></div></div></div>
+                      <input type="hidden" name="puntos" id="puntos">
+                      <input type="hidden" value="55" name="user" id="user">
+                      <button class="btn btn-primary text-white badge-pill mx-auto fs-x-10 mt-2" id="btn_guardarPuntos" type="button">Guardar Calificación</button>
+                      <button class="btn btn-danger text-white badge-pill mx-auto fs-x-10 mt-2" id="btn_cancelarPuntuacion" type="button">Cancelar Calificación</button>
+                    </form>
+                </div>                   
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="row closeInferior" style="cursor: pointer">
+              <a type="button" class="btn-volver ml-auto">
+               <img src="iconos/volver.png" alt="volver">
+               <span class="d-block pt-2 text-dark fs-x-15">Regresar</span>
+              </a>
+          </div>
+      </div>
+      
+         
+  
+        <div class="container mt-2 d-none justify-content-center  animate__animated " id="containerMapa" style="transition: all ease-in;">
+          <div class="row">
+            <div class="col-sm-12 m-0 col-lg-6  mx-auto ">
+              <div class="card text-center  bg-white border-0">
+                <div class=" card-header text-center bg-white border-0 ">
+                  <p class="h2 p-0 mb-0 d-inline">Ubicacion</p>
+                  <img class="icono d-inline" src="iconos/mapa.png" alt="mapa">
+                    <hr>
+                </div>
+                <div class=" card-body border-0 rounded-0 bg-white">
+                    <p class="text-center">
+                      dirección de prueba - referencia de prueba
+                    </p>
+                </div>
+                <div class="card-footer text-center bg-white border-0">
+                    <a class="btn btn-primary badge-pill " id="btn_mapa" href="https://www.google.com/maps/@-6.7749683,-79.9120746,16z" target="_blank">Ver en mapa</a>
+                </div>
+              </div>
+            </div>
+         </div>
+  
+         <div class="row closeInferior" style="cursor: pointer">
+          <a type="button" class="btn-volver ml-auto">
+           <img src="iconos/volver.png" alt="volver">
+           <span class="d-block pt-2 text-dark fs-x-15">Regresar</span>
+          </a>
+        </div>
+        </div>
+  
+        <div class="bg-transparent animate__animated d-none mt-4" id="containerPublicaciones" style="transition: all ease-in;">
+          <div class="container">
+            <div class="row">
+                            <div class="col-sm-12 col-lg-6 p-2 p-lg-2">
+                  <div class="card bg-white p-2">
+                    <div class="header-estudios  ">
+                      <p class="text-uppercase fs-x-14 px-3 cabecera">Artículos</p>                    
+                  </div>
+                  <div class="perfil-body pl-3">
+                      <ul class="list-unstyled">
+                                              <li class="fs-x-15 ">  <span class="text-gray">prueba de registro</span>
+                          <a href="https://www.youtube.com/watch?v=p0OH206z9Wg" target="_blank" class="fs-x-13 text-primary d-block">https://www.youtube.com/watch?v=p0OH206z9Wg</a>
+                        </li>
+                      
+                      </ul>
+  
+                  </div>
+                  </div>
+                </div>    
+                        
+                            <div class="col-sm-12 col-lg-6 p-2 p-lg-2">
+                  <div class="card bg-white p-2">
+                    <div class="header-estudios  ">
+                      <p class="text-uppercase fs-x-14 px-3 cabecera">Videos</p>
+                  </div>
+                  <div class="perfil-body pl-3">
+                      <ul class="list-unstyled">
+                                              <li class="fs-x-15 ">  <span class="text-gray">video de prueba</span>
+                          <a href="https://www.youtube.com/watch?v=p0OH206z9Wg" target="_blank" class="fs-x-13 text-primary d-block">https://www.youtube.com/watch?v=p0OH206z9Wg</a>
+                        </li>
+                      
+                      </ul>
+  
+                  </div>
+                  </div>
+                </div>
+                        </div>  
+            <div class="row closeInferior" style="cursor: pointer">
+              <a type="button" class="btn-volver ml-auto">
+               <img src="iconos/volver.png" alt="volver">
+               <span class="d-block pt-2 text-dark fs-x-15">Regresar</span>
+              </a>
+          </div>
+          </div>
+        </div>
+  
+  
+        <div class="bg-transparent animate__animated d-none mt-4 " id="containerReserva" style="transition: all ease-in;">
+          <div class="container ">
+            <div class="row">
+              <div class="col-sm-12 col-lg-4 my-1 p-1 mx-auto ">
+                <div class="card bg-white p-2">
+                  <div class="header-estudios  ">
+                    <p class="text-uppercase fs-x-14 cabecera px-3 ">Llamar a</p>                    
+                  </div>
+                  <div class="perfil-body pl-3">
+                    <ul class="list-unstyled">
+                      <li class="fs-x-15 ">  <span class="border-bottom">FIJO:</span>
+                        <a href="tel:952226284">
+                          952226284
+                          <img class="icono-2" src="iconos/llamada.png" alt="telefono">
+                        </a>
+                      </li>
+                      <li class="fs-x-15  "> <span class="border-bottom">CONSULTORIO</span>
+                        <a href="https://api.whatsapp.com/send?phone=+51 074323695" target="_blank">
+                          074323695
+                          <img class="icono-2" src="iconos/whatsapp.png" alt="telefono">
+                        </a>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-4 my-1 p-1 mx-auto">
+                <div class="card bg-white p-2">
+                  <div class="header-estudios  ">
+                    <p class="text-uppercase fs-x-14 cabecera px-3 ">Direccion</p>                    
+                </div>
+                <div class="perfil-body pl-3">
+                  <p class="text-center ">
+                    dirección de prueba - referencia de prueba
+                  </p>
+                  <img class="icono d-block mx-auto" src="iconos/mapa.png" alt="mapa">
+                </div>
+                </div>
+              </div>
+            
+                        </div> 
+                          
+            <div class="row">
+              <div class="col-sm-12 col-lg-4 my-1 p-1 mx-auto">
+                <div class="card bg-white p-2">
+                  <div class="header-estudios  ">
+                    <p class="text-uppercase fs-x-14 cabecera px-3 ">PAGOS CON TARJETA</p>                    
+                  </div>
+                  <div class="perfil-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-3 p-1">
+                          <div class="w-100  d-inline-block  m-auto">
+                            <img class="icono" src="iconos/pago.png" alt="horario de atencion">
+  
+                          </div>
+                        </div>
+                        <div class="col-9 p-0">
+                                                      <div class="d-inline d-inline-block w-100  p-0 pl-2">
+                                                                <span class="d-block fs-x-15">bcp</span>
+                                  <span class="d-block fs-x-13 text-primary"> https://www.youtube.com/watch?v=p0OH206z9Wg </span>            
+                                                            </div>
+                                                                              <div class="d-inline d-inline-block w-100  p-0 pl-2">
+                                                                <span class="d-block fs-x-15">bn</span>
+                                  <span class="d-block fs-x-13 text-primary"> 05741648575 </span>            
+                                                            </div>
+                                                </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+             
+            <div class="row closeInferior" style="cursor: pointer">
+              <a type="button" class="btn-volver ml-auto">
+               <img src="iconos/volver.png" alt="volver">
+               <span class="d-block pt-2 text-dark fs-x-15">Regresar</span>
+              </a>
+          </div>
+          </div>
+        </div>
+  
+        <div class="container  animate__animated d-none mt-3" id="containerCompartir" style="transition: all ease-in;">
+            <div class="row pt-2 justify-content-center ">
+              <div class="col-sm-12 col-lg-6 p-3 bg-white">
+                  <div class="card border-0 ">
+                    <div class="card-header text-center  bg-white border-0">
+                      <h2 class="h2 text-center">Compartir tarjeta</h2>
+                          <hr>
+                      </div>
+                      <div class=" card-body pt-2 border-0 rounded-0 bg-white">
+                              
+                          <div class="tarjetas-redes">                        
+      
+                              <a class="boton btn-whatsapp text-white" href="https://api.whatsapp.com/send?text=Accede+a+la+tarjeta+digital+desde+el+siguiente+enlace%20+http://corpussalud.com.pe/card/agenda/CRMXB" target="_blank"> <i class="fab fa-whatsapp mr-2"></i>   Whatsapp</a>
+      
+                                                        
+                          </div>
+                          <div class="mt-1">
+                          <p>Otros métodos para compartir</p>
+                          <div class="tarjetas-redes">
+                              <button class="btn-copiar" id="copy">  <i class="far fa-copy mr-2"></i>  Copiar Enlace</button>
+                              <a class="btn-copiar" id="btn_qr"> <i class="fas fa-qrcode mr-2"></i>   Código Qr</a>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="row closeInferior" style="cursor: pointer">
+            <a type="button" class="btn-volver ml-auto">
+             <img src="iconos/volver.png" alt="volver">
+             <span class="d-block pt-2 text-dark fs-x-15">Regresar</span>
+            </a>
+        </div>
+        </div>
+  
+        <div class="container d-none animate__animated mt-3" id="containerQr" style="transition: all ease-in;">
+          <div class="row justify-content-md-center p-3">
+              <div class="col-sm-12 col-lg-6 ">
+                <div class="card bg-white border-0">
+                  <div class="card-header bg-white border-0 ">
+                    <p class="h3 text-center">  <i class="fas fa-qrcode mr-2"></i> CÓDIGO QR GENÉRICO </p>
+                  <hr>
+                  </div>
+                  <div class="card-body bg-white border-0 text-center py-0">
+                    <p>Usa la cámara de tu smartphone o un lector de QR para acceder a la tarjeta digital.</p>
+                  </div>
+                  <div class="card-footer bg-white border-0 ">
+                    <div class="visible-print text-center ">
+                      <!--?xml version="1.0" encoding="UTF-8"?-->
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="200" viewBox="0 0 200 200"><rect x="0" y="0" width="200" height="200" fill="#ffffff"></rect><g transform="scale(6.897)"><g transform="translate(0,0)"><path fill-rule="evenodd" d="M10 0L10 1L8 1L8 3L9 3L9 4L8 4L8 8L6 8L6 9L8 9L8 8L9 8L9 5L10 5L10 8L11 8L11 11L9 11L9 10L10 10L10 9L9 9L9 10L6 10L6 11L7 11L7 12L6 12L6 13L9 13L9 14L8 14L8 15L9 15L9 14L10 14L10 16L12 16L12 18L10 18L10 19L9 19L9 21L8 21L8 20L6 20L6 19L8 19L8 18L9 18L9 17L8 17L8 16L6 16L6 17L8 17L8 18L5 18L5 10L4 10L4 11L3 11L3 10L2 10L2 8L0 8L0 13L1 13L1 14L2 14L2 15L3 15L3 14L2 14L2 13L3 13L3 12L4 12L4 16L1 16L1 15L0 15L0 16L1 16L1 18L0 18L0 19L1 19L1 18L2 18L2 19L3 19L3 21L8 21L8 23L9 23L9 25L8 25L8 26L9 26L9 25L11 25L11 26L10 26L10 28L11 28L11 29L15 29L15 28L17 28L17 29L18 29L18 27L20 27L20 29L21 29L21 27L20 27L20 25L22 25L22 26L23 26L23 25L24 25L24 28L23 28L23 27L22 27L22 28L23 28L23 29L24 29L24 28L25 28L25 29L26 29L26 28L25 28L25 27L27 27L27 29L28 29L28 27L29 27L29 26L28 26L28 25L27 25L27 26L25 26L25 20L24 20L24 19L23 19L23 18L24 18L24 15L25 15L25 17L26 17L26 15L27 15L27 17L28 17L28 18L27 18L27 20L26 20L26 22L27 22L27 23L26 23L26 24L27 24L27 23L28 23L28 24L29 24L29 23L28 23L28 22L29 22L29 21L27 21L27 20L29 20L29 17L28 17L28 15L29 15L29 14L27 14L27 13L29 13L29 12L28 12L28 10L29 10L29 9L28 9L28 8L26 8L26 9L25 9L25 8L22 8L22 10L23 10L23 11L22 11L22 12L21 12L21 11L20 11L20 10L21 10L21 9L20 9L20 8L21 8L21 6L20 6L20 5L19 5L19 6L18 6L18 7L17 7L17 6L16 6L16 5L17 5L17 4L16 4L16 3L15 3L15 2L17 2L17 3L18 3L18 4L19 4L19 1L20 1L20 3L21 3L21 0L17 0L17 1L16 1L16 0L14 0L14 1L15 1L15 2L14 2L14 3L15 3L15 4L14 4L14 5L15 5L15 6L14 6L14 9L13 9L13 8L12 8L12 7L13 7L13 3L12 3L12 7L11 7L11 4L10 4L10 3L9 3L9 2L11 2L11 0ZM17 1L17 2L18 2L18 1ZM15 6L15 8L17 8L17 9L18 9L18 10L17 10L17 12L18 12L18 11L19 11L19 13L16 13L16 12L15 12L15 11L16 11L16 9L14 9L14 10L13 10L13 11L14 11L14 12L12 12L12 16L13 16L13 14L14 14L14 17L13 17L13 20L12 20L12 19L10 19L10 22L11 22L11 25L12 25L12 24L13 24L13 26L14 26L14 28L15 28L15 27L16 27L16 25L15 25L15 24L16 24L16 20L15 20L15 24L13 24L13 22L14 22L14 19L17 19L17 18L19 18L19 20L17 20L17 21L18 21L18 22L17 22L17 24L18 24L18 25L20 25L20 22L19 22L19 21L20 21L20 15L21 15L21 16L22 16L22 17L23 17L23 16L22 16L22 14L25 14L25 15L26 15L26 13L27 13L27 12L26 12L26 13L25 13L25 11L24 11L24 13L21 13L21 14L19 14L19 13L20 13L20 11L19 11L19 10L20 10L20 9L19 9L19 7L20 7L20 6L19 6L19 7L18 7L18 8L17 8L17 7L16 7L16 6ZM3 8L3 9L4 9L4 8ZM23 9L23 10L25 10L25 9ZM26 9L26 10L28 10L28 9ZM1 10L1 11L2 11L2 12L1 12L1 13L2 13L2 12L3 12L3 11L2 11L2 10ZM14 10L14 11L15 11L15 10ZM9 12L9 13L10 13L10 14L11 14L11 13L10 13L10 12ZM14 13L14 14L15 14L15 13ZM6 14L6 15L7 15L7 14ZM16 15L16 16L17 16L17 17L16 17L16 18L17 18L17 17L18 17L18 16L19 16L19 15ZM2 17L2 18L3 18L3 19L4 19L4 20L5 20L5 18L4 18L4 17ZM14 17L14 18L15 18L15 17ZM21 18L21 20L22 20L22 18ZM25 18L25 19L26 19L26 18ZM0 20L0 21L1 21L1 20ZM11 21L11 22L12 22L12 21ZM21 21L21 24L24 24L24 21ZM18 22L18 24L19 24L19 22ZM22 22L22 23L23 23L23 22ZM11 26L11 28L12 28L12 26ZM17 26L17 27L18 27L18 26ZM27 26L27 27L28 27L28 26ZM8 27L8 29L9 29L9 27ZM0 0L0 7L7 7L7 0ZM1 1L1 6L6 6L6 1ZM2 2L2 5L5 5L5 2ZM22 0L22 7L29 7L29 0ZM23 1L23 6L28 6L28 1ZM24 2L24 5L27 5L27 2ZM0 22L0 29L7 29L7 22ZM1 23L1 28L6 28L6 23ZM2 24L2 27L5 27L5 24Z" fill="#000000"></path></g></g></svg>
+  
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="row closeInferior" style="cursor: pointer">
+            <a type="button" class="btn-volver ml-auto">
+             <img src="iconos/volver.png" alt="volver">
+             <span class="d-block pt-2 text-dark fs-x-15">Regresar</span>
+            </a>
+        </div>
+        </div>
+  
+         <div class="container my-2  d-none animate__animated  mt-3" id="containerEmail" style="transition: all ease-in;">
+           <div class="row">
+            <div class="col-sm-12  col-lg-6 mx-auto ">
+              <div class="card border-0 rounded-0 bg-white  w-100">
+                 <div class="card-header  border-0 rounded-0 bg-white ">
+                  <p class="text-center h4">
+                    Contacta al médico por medio de un correo electrónico.
+                   </p>
+                 </div>
+                  <div class="card-body border-0  rounded-0 bg-white ">
+                    <form method="POST" id="form_mail">
+                      <input type="hidden" name="_token" value="OHt1Pncg6xhWbqS2x9A2xbZJmhgKBZoOPTxQy4cM">                    <input type="hidden" value="55" id="user" name="user">
+                      <div class="form-group">
+                          <label>Correo</label>
+                          <input type="text" class="form-control" id="correo" name="correo">
+                      </div>
+                      <div class="form-group">
+                        <label>mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" cols="30"></textarea>
+                      </div>
+                      <div class="tarjetas-redes">
+                              <button type="submit" class="btn btn-primary badge-pill " id="sendMail">Enviar Email</button>
+                      </div>
+                  </form>
+                  </div>
+              </div>            
+          </div>
+           </div>
+            <div class="row closeInferior" style="cursor: pointer">
+              <a type="button" class="btn-volver ml-auto">
+              <img src="iconos/volver.png" alt="volver">
+              <span class="d-block pt-2 text-dark fs-x-15">Regresar</span>
+              </a>
+            </div>
+        </div>
+  
+        <div class="container d-none animate__animated  mt-1" id="containerVideoConsulta" style="transition: all ease-in;">
+       
+            <div class="container bg-white">
+              <div class="d-block f-century text-center pt-2 ">
+                  <h5 class="h3 ">¡Gracias por solicitar mis servicios!</h5>
+              </div>
+              <section class="container">
+                  <div class="row">
+                      <div class="col-sm-12 col-lg-8 mx-auto p-0">
+                          <div class="d-block mb-3 titulo-form-contact ">
+                              <p class="fs-1x-22 f-century text-center d-block">
+                                 Llene la ficha de datos y y nos pondremos en contacto para agendar su cita
+                              </p>
+                          </div>
+      
+                          <div class="mb-5 bg-primary p-1">
+                              <form class="p-3" id="formContact" method="POST">
+                              <input type="hidden" name="_token" value="OHt1Pncg6xhWbqS2x9A2xbZJmhgKBZoOPTxQy4cM">                            <input type="hidden" id="medico_id" name="medico_id" value="55">
+                              <input type="hidden" id="correo_medico" name="correo_medico" value="jeffreygarciajibaja@gmail.com">
+                                   <div class="form-row">
+                                      <div class="col-sm-12 col-lg-6">
+                                          <label for="nombres" class="fs-1x text-light f-century text-white"> Nombres del Paciente: </label>
+                                          <input type="text" class="form-control border-0 rounded-0 " value="" required="" name="nombre" id="nombre">
+                                      </div>
+                                
+                                      <div class="col-sm-12 col-lg-6">
+                                          <label for="apellidos" class="text-light f-century fs-1x text-white"> Apellidos del Paciente: </label>
+                                          <input required="" type="text" class="form-control border-0 rounded-0" name="apellidos" id="apellidos">
+                                      </div>
+                                  </div>
+                                  <div class="form-row mt-3">
+                                      <div class="form-group col-md-6">
+                                          <label for="dni" class="fs-1x text-light f-century text-white"> DNI: </label>
+                                          <input required="" type="text" pattern="^[0-9]+" name="dni" maxlength="8" class="form-control border-0 rounded-0" id="dni">
+                                      </div>
+                                          <div class="form-group col-md-4">
+                                              <label for="fecha_nac" class="text-light f-century fs-1x text-white"> Edad: </label>
+                                              <input required="" type="date" class="form-control border-0 rounded-0" name="fecha_nac" id="fecha_nac">
+                                          </div>
+                                          <div class="form-group col-md-2">
+                                              <label for="sexo" class="text-light f-century fs-1x text-white"> Sexo: </label>
+                                              <select name="sexo" id="sexo" class="form-control border-0 rounded-0">
+                                                  <option value="0">Femenino</option>
+                                                  <option value="1">Masculino</option>
+                                              </select>
+                                          </div>
+                                  </div>
+                                  <div class="form-row">
+                                      <div class="col-sm-12 col-lg-6">
+                                          <label for="telefono" class="fs-1x text-light f-century text-white"> Telefono </label>
+                                          <input required="" pattern="^[0-9]+" maxlength="11" type="text" class="form-control border-0 rounded-0" name="telefono" id="telefono">
+                                      </div>
+                                
+                                      <div class="col-sm-12 col-lg-6">
+                                          <label for="email" class="text-light f-century fs-1x text-white"> Correo electrónico: </label>
+                                          <input required="" type="text" class="form-control border-0 rounded-0" name="email" id="emailPaciente">
+                                      </div>
+                                  </div>
+                                  <div class="form-row mt-3">
+                                      <div class="col">
+                                          <label for="mensaje" class="fs-1x f-montserrat text-white"> Mensaje</label>
+                                          <textarea required="" name="mensaje" id="mensajeFicha" class="form-control rounded-0 border-0" cols="30" rows="10"></textarea>
+                                      </div>
+                                  </div>
+                                  <div class="d-block text-right mt-2">
+                                      
+                                      <button id="enviar" type="button " class="fs-x f-century text-secondary bg-white border-0 rounded-0 w-auto"> Enviar Consulta</button>
+                                    </div>
+      
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+          </div>
+          
+          <div class="row closeInferior" style="cursor: pointer">
+            <a type="button" class="btn-volver ml-auto">
+            <img src="iconos/volver.png" alt="volver">
+            <span class="d-block pt-2 text-dark fs-x-15">Regresar</span>
+            </a>
+          </div>
+        </div>
+  
+  <div class="container d-none animate__animated  mt-1" id="containerAcceso" style="transition: all ease-in;">
+       
+          <div class="container bg-white">
+            <div class="d-block f-century text-center py-2 ">
+              <div class="card   bg-transparent border-0 ">
+                <ul class="nav nav-tabs   d-flex justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item mx-1">
+                      
+                        <a class="w-100 btn btn-perfil-agenda badge-pill  px-4 py-2 fs-x-12 text-white text-uppercase d-block mx-auto my-1" id="android-tab" data-toggle="tab" href="#android" role="tab" aria-controls="android" aria-selected="true">
+                        <i class="fab fa-android text-white fs-x-15"></i>
+                        ANDROID
+                        </a>
+                    </li>
+                    <li class="nav-item  mx-1">
+                      <a class="w-100 btn btn-perfil-agenda badge-pill fs-x-12 px-4 py-2  text-white text-uppercase d-block mx-auto my-1" id="ios-tab" data-toggle="tab" href="#ios" role="tab" aria-controls="ios" aria-selected="true">
+                      <i class="fab fa-apple fs-x-15"></i>
+                        IOS
+                      </a>
+                  </li>
+                </ul>
+                <div class="tab-content border-0" id="myTabContent">
+                    <div class="tab-pane border-0 rounded-0 fade show active" id="android" role="tabpanel" aria-labelledby="android-tab">
+                       <div class="container">
+                           <div class="row">
+                               <div class="col-sm-12 col-lg-7 mx-auto">
+                                   <div class="card rounded-0 border-0 p-lg-3">
+                                       <div class="card-header bg-transparent border-0 p-lg-4">
+                                           <p class="text-dark text-center text-bold h2"><i class="fab fa-android text-success"></i> Android</p>
+                                       </div>
+                                       <div class="card-body text-left border-0">
+                                           <p>
+                                            Para añadir esta tarjeta en tu móvil Android desde el navegador web Google Chrome.
+                                          </p>
+                                          <ul>
+                                            <li>Pulsa éste botón en la parte superior <i class="fas fa-ellipsis-v border px-2 py-1 rounded"></i> de su pantalla</li>
+                                            <li>Seleccione la opcion <strong>"añadir a pantalla de inicio"</strong></li>
+                                            <li>Para confirmar debera seleccionar la opcion <strong>"Añadir automaticamente"</strong></li>
+                                          </ul>
+                                       </div>
+                                       
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="tab-pane fade border-0 rounded-0" id="ios" role="tabpanel" aria-labelledby="ios-tab">
+                       <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-7 mx-auto">
+                                <div class="card rounded-0 border-0 p-lg-3">
+                                    <div class="card-header bg-transparent border-0 p-lg-4">
+                                        <p class="text-dark text-center text-bold h2"><i class="fab fa-apple"></i> Apple iOS - iPhone</p>
+                                    </div>
+                                    <div class="card-body text-left border-0">
+                                      <p>
+                                        Para añadir esta tarjeta en tu móvil Android desde el navegador web Safari.
+                                      </p>
+                                      <ul>
+                                        <li>Pulsa el botón de <strong>“compartir”</strong> , ubicado en la barra inferior de su pantalla. El cúal tiene este icomo <img class="icono-2" src="comparti-safari.png" alt="compartir safari"></li>
+                                        <li>Seleccione la opcion <strong>"añadir a pantalla de inicio"</strong></li>
+                                        <li>Para confirmar debera seleccionar la opcion <strong>"Añadir"</strong></li>
+                                      </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        
+          <div class="row closeInferior" style="cursor: pointer">
+            <a type="button" class="btn-volver ml-auto">
+            <img src="http://corpussalud.com.pe/card/image/iconos/volver.png" alt="volver">
+            <span class="d-block pt-2 text-dark fs-x-15">Regresar</span>
+            </a>
+          </div>
+      </div>
+  
+  
+      <script src="app.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.1/jquery.rateyo.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>  
+  </body>
+</html>
