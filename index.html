@@ -642,6 +642,9 @@
                                         <li>Para confirmar debera seleccionar la opcion <strong>"Añadir"</strong></li>
                                       </ul>
                                     </div>
+                                    <div class="card-footer bg-white border-0 text-center">
+                                      <button class="btn btn-primary badge-pill text-white fs-x-18 d-block" id="add-button">Agregar a pantalla principal</button>
+                                   </div>
                                 </div>
                             </div>
                         </div>
@@ -664,5 +667,36 @@
       <script src="app.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.1/jquery.rateyo.min.js"></script>
       <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>  
+
+      <script>        
+        let deferredPrompt;
+         const addBtn = document.querySelector('#add-button');
+                  window.addEventListener('beforeinstallprompt', (e) => {
+           // Prevent Chrome 67 and earlier from automatically showing the prompt
+           e.preventDefault();
+           // Stash the event so it can be triggered later.
+           deferredPrompt = e;
+           // Update UI to notify the user they can add to home screen
+           addBtn.style.display = 'block';
+         
+           addBtn.addEventListener('click', (e) => {
+             // hide our user interface that shows our A2HS button
+             addBtn.style.display = 'none';
+             // Show the prompt
+             deferredPrompt.prompt();
+             // Wait for the user to respond to the prompt
+             deferredPrompt.userChoice.then((choiceResult) => {
+                 if (choiceResult.outcome === 'accepted') {
+                   console.log('User accepted the A2HS prompt');
+                 } else {
+                   console.log('User dismissed the A2HS prompt');
+                 }
+                 deferredPrompt = null;
+               });
+           });
+          
+         });
+     </script>
+ 
   </body>
 </html>
